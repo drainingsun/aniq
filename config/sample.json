@@ -1,0 +1,65 @@
+{
+    "app": {
+        "name": "aniq",
+        "debug": false,
+        "offline": false,
+        "version": "0.1.0"
+    },
+    "http": {
+        "port": 8090
+    },
+    "servers": {
+        "s1": {
+            "host": "localhost",
+            "port": 6824,
+            "redis": {
+                "r1": {
+                    "host": "localhost",
+                    "port": 6379
+                },
+                "r2": {
+                    "host": "localhost",
+                    "port": 6380
+                },
+                "r3": {
+                    "host": "localhost",
+                    "port": 6381
+                },
+                "r4": {
+                    "host": "localhost",
+                    "port": 6382
+                }
+            }
+        },
+        "s2": {
+            "host": "localhost",
+            "port": 6825,
+            "redis": {
+                "r5": {
+                    "host": "localhost",
+                    "port": 6379
+                },
+                "r6": {
+                    "host": "localhost",
+                    "port": 6380
+                },
+                "r7": {
+                    "host": "localhost",
+                    "port": 6381
+                },
+                "r8": {
+                    "host": "localhost",
+                    "port": 6382
+                }
+            }
+        }
+    },
+    "client": {
+        "replication": 2,
+        "writePolicy": 2
+    },
+    "metrohashSeed": 749,
+    "maxNumber": "18446744073709551615",
+    "maxSetSize": 8192,
+    "parallelQueue": 100
+}

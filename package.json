@@ -1,0 +1,42 @@
+{
+    "name": "aniq",
+    "version": "0.1.0",
+    "description": "Scalable distinct value counting system",
+    "main": "app.js",
+    "scripts": {
+        "lint": "eslint ./ || true",
+        "test": "NODE_ENV=testing mocha --timeout 5000 --exit tests"
+    },
+    "keywords": [
+        "unique",
+        "distinct",
+        "cardinality",
+        "union",
+        "intersection"
+    ],
+    "author": "Draining Sun",
+    "license": "MIT",
+    "dependencies": {
+        "ared": "0.2.1",
+        "async": "2.6.0",
+        "bignumber.js": "5.0.0",
+        "bunyan": "1.8.12",
+        "lodash": "4.17.4",
+        "metrohash": "2.3.0",
+        "restify": "6.3.4"
+    },
+    "devDependencies": {
+        "eslint": "4.14.0",
+        "mocha": "4.1.0",
+        "should": "13.2.0",
+        "supertest": "3.0.0",
+        "redis": "2.8.0"
+    },
+    "engines": {
+        "node": ">=6"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/drainingsun/aniq.git"
+    }
+}
